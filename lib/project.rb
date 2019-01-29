@@ -11,8 +11,9 @@ class Project
     self.add_to_backer(backer)
   end
   
-  def add_to_project(backer)
-    project.add_backer(self)
+  def add_to_backer(backer)
+    backer.projects.include?(self)
+    backer.add_to_project(self)
   end
   
 end
