@@ -11,7 +11,7 @@ class Backer
     #   @backed_projects
     # else
       @backed_projects << project
-      self.add_to_project(project)
+      self.add_to_project(project) unless project.
     # end
   end
   
