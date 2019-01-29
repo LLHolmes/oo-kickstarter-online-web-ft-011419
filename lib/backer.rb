@@ -12,6 +12,7 @@ class Backer
     else
       @backed_projects << project
       self.add_to_project
+    end
   end
   
   def add_to_project
